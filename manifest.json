@@ -4,7 +4,7 @@
   "manifest_version": 2,
   "description": "Hide the unread count count in the gmail tab title.",
   "content_scripts": [{
-    "matches": ["*://mail.google.com/*"],
+    "matches": ["*://mail.google.com/*", "*://www.facebook.com/*", "*://twitter.com/*"],
     "js": ["hide_count.js"]
   }],
   "permissions": [
