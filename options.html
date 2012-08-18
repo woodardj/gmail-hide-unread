@@ -1,39 +1,79 @@
+<!--
+// Fancy Settings by Frank Kohlhepp
+// Copyright (c) 2011 - 2012 Frank Kohlhepp
+// https://github.com/frankkohlhepp/fancy-settings
+// License: LGPL v2.1
+-->
+<!DOCTYPE html>
 <html>
-<head><title>gmail-hide-unread options</title></head>
-<script type="text/javascript">
-// Saves options to localStorage.
-function save_options() {
-  var select = document.getElementsByName("sites");
-  var color = select.children[select.selectedIndex].value;
-  localStorage["favorite_color"] = color;
-  // Update status to let user know options were saved.
-  var status = document.getElementById("status");
-  status.innerHTML = "Options Saved.";
-  setTimeout(function() {
-    status.innerHTML = "";
-  }, 750);
-}
-// Restores select box state to saved value from localStorage.
-function restore_options() {
-  var favorite = localStorage["favorite_color"];
-  if (!favorite) {
-    return;
-  }
-  var select = document.getElementById("color");
-  for (var i = 0; i < select.children.length; i++) {
-    var child = select.children[i];
-    if (child.value == favorite) {
-      child.selected = "true";
-      break;
-    }
-  }
-}
-</script>
-<body onload="restore_options()">
-Enable for sites:<br/>
-<input type="checkbox" id="gmail" value="gmail" name="sites[]"/><label for="gmail">Gmail</label><br/>
-<input type="checkbox" id="facebook" value="facebook" name="sites[]"/><label for="facebook">Facebook</label><br/>
-<input type="checkbox" id="twitter" value="twitter" name="sites[]"/><label for="twitter">Twitter</label><br/>
-<button onclick="save_options()">Save</button>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title id="title"></title>
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="fancy-settings/source/lib/default.css">
+        
+        <link rel="stylesheet" href="fancy-settings/source/css/main.css">
+        <link rel="stylesheet" href="fancy-settings/source/css/setting.css">
+        <link rel="stylesheet" href="fancy-settings/source/custom.css">
+        
+        <!-- JavaScripts -->
+        <script src="fancy-settings/source/lib/mootools-core.js"></script>
+        <script src="fancy-settings/source/lib/store.js"></script>
+        <script src="fancy-settings/source/lib/version.js"></script>
+        
+        <script src="fancy-settings/source/js/classes/tab.js"></script>
+        <script src="fancy-settings/source/js/classes/setting.js"></script>
+        <script src="fancy-settings/source/js/classes/search.js"></script>
+        <script src="fancy-settings/source/js/classes/fancy-settings.js"></script>
+        <script src="fancy-settings/source/i18n.js"></script>
+        <script src="fancy-settings/source/js/i18n.js"></script>
+        <script src="options_manifest.js"></script>
+        <script src="fancy-settings/source/settings.js"></script>
+    </head>
+    <body class="no-select design-buttons">
+        <div id="sidebar">
+            <h1 id="name"></h1>
+            <div id="tab-container">
+                <div id="search-tab" class="tab"></div>
+            </div>
+        </div>
+        
+        <div id="content">
+            <input id="search" type="search">
+            <div id="search-tab-content" class="tab-content">
+                <h2 id="search-label" class="tab-name"></h2>
+                <div id="search-settings" class="tab-settings"></div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
