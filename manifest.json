@@ -1,8 +1,8 @@
 {
-  "name": "Gmail Hide Unread",
+  "name": "(NO)tifications",
   "version": "1.0.0.0",
   "manifest_version": 2,
-  "description": "Hide the unread count count in the gmail tab title.",
+  "description": "Hide the unread messages title bar alerts on distracting websites.",
   "options_page": "options.html",
   "background": {
     "page": "background.html"
@@ -13,5 +13,10 @@
   }],
   "permissions": [
     "tabs"
-  ]
+  ],
+//  "icons" : {
+//    "48" : "icon-48.png",
+//    "128" : "icon-128.png"
+//  },
+  "content_security_policy": "script-src 'self'; object-src 'self'"
 }
