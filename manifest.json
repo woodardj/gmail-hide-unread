@@ -1,6 +1,6 @@
 {
   "name": "(NO)tifications",
-  "version": "1.0.0.0",
+  "version": "1.0.0.1",
   "manifest_version": 2,
   "description": "Hide the unread messages title bar alerts on distracting websites.",
   "options_page": "options.html",
