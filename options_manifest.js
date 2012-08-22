@@ -1,7 +1,7 @@
 // SAMPLE
 this.manifest = {
-    "name": "Gmail Hide Unread",
-    "icon": "icon.png",
+    "name": "(NO)tifications",
+    "icon": "icon-48.png",
     "settings": [
         {
             "tab": i18n.get("Sites"),
