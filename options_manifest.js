@@ -13,6 +13,13 @@ this.manifest = {
         {
             "tab": i18n.get("Sites"),
             "group": i18n.get("Sites"),
+            "name": "googleplus",
+            "type": "checkbox",
+            "label": i18n.get("Google+")
+        },
+        {
+            "tab": i18n.get("Sites"),
+            "group": i18n.get("Sites"),
             "name": "facebook",
             "type": "checkbox",
             "label": i18n.get("Facebook")

@@ -24,6 +24,7 @@ function remove_parens(){
   //Plugin enabled for this site?
   if( options.facebook && host.indexOf('facebook.com') > -1 ||
       options.twitter && host.indexOf('twitter.com') > -1 ||
+      options.googleplus && host.indexOf('plus.google.com') > -1 ||
       options.gmail && host.indexOf('mail.google.com') > -1 ){
     
     //Is there a notification?
